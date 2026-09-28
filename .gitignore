@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+# downloaded data (re-fetched by run_demo.py); the demo-event files ship in the zip
+data/cache/*/clim_samples.nc
+data/cache/*/fine_train.nc
+data/cache/synthetic/
+# smoke-test weights from --fast
+models/*_fast/

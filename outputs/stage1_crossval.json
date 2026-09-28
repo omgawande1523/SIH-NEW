@@ -1,0 +1,480 @@
+{
+  "per_event": {
+    "fani": {
+      "clim_years_excluded": [
+        2019
+      ],
+      "heavy_rain": {
+        "all": {
+          "gnn": 0.933,
+          "efi": 0.827
+        },
+        "day 0-2": {
+          "gnn": 0.991,
+          "efi": 0.994
+        },
+        "day 3-5": {
+          "gnn": 0.97,
+          "efi": 0.952
+        },
+        "day 6-10": {
+          "gnn": 0.871,
+          "efi": 0.69
+        }
+      },
+      "damaging_wind": {
+        "all": {
+          "gnn": 0.878,
+          "efi": 0.776
+        },
+        "day 0-2": {
+          "gnn": 0.977,
+          "efi": 0.974
+        },
+        "day 3-5": {
+          "gnn": 0.932,
+          "efi": 0.859
+        },
+        "day 6-10": {
+          "gnn": 0.789,
+          "efi": 0.675
+        }
+      },
+      "extreme_heat": {
+        "all": {
+          "gnn": 0.862,
+          "efi": 0.822
+        },
+        "day 0-2": {
+          "gnn": 0.918,
+          "efi": 0.899
+        },
+        "day 3-5": {
+          "gnn": 0.872,
+          "efi": 0.839
+        },
+        "day 6-10": {
+          "gnn": 0.77,
+          "efi": 0.695
+        }
+      }
+    },
+    "heatwave2019": {
+      "clim_years_excluded": [
+        2019
+      ],
+      "heavy_rain": {
+        "all": {
+          "gnn": 0.918,
+          "efi": 0.934
+        },
+        "day 0-2": {
+          "gnn": 0.957,
+          "efi": 0.949
+        },
+        "day 3-5": {
+          "gnn": 0.936,
+          "efi": 0.937
+        },
+        "day 6-10": {
+          "gnn": 0.885,
+          "efi": 0.922
+        }
+      },
+      "damaging_wind": {
+        "all": {
+          "gnn": 0.862,
+          "efi": 0.76
+        },
+        "day 0-2": {
+          "gnn": 0.909,
+          "efi": 0.861
+        },
+        "day 3-5": {
+          "gnn": 0.946,
+          "efi": 0.844
+        },
+        "day 6-10": {
+          "gnn": 0.783,
+          "efi": 0.706
+        }
+      },
+      "extreme_heat": {
+        "all": {
+          "gnn": 0.776,
+          "efi": 0.766
+        },
+        "day 0-2": {
+          "gnn": 0.882,
+          "efi": 0.833
+        },
+        "day 3-5": {
+          "gnn": 0.812,
+          "efi": 0.802
+        },
+        "day 6-10": {
+          "gnn": 0.684,
+          "efi": 0.707
+        }
+      }
+    },
+    "vayu": {
+      "clim_years_excluded": [
+        2019
+      ],
+      "heavy_rain": {
+        "all": {
+          "gnn": 0.885,
+          "efi": 0.909
+        },
+        "day 0-2": {
+          "gnn": 0.967,
+          "efi": 0.966
+        },
+        "day 3-5": {
+          "gnn": 0.967,
+          "efi": 0.966
+        },
+        "day 6-10": {
+          "gnn": 0.673,
+          "efi": 0.781
+        }
+      },
+      "damaging_wind": {
+        "all": {
+          "gnn": 0.824,
+          "efi": 0.802
+        },
+        "day 0-2": {
+          "gnn": 0.965,
+          "efi": 0.953
+        },
+        "day 3-5": {
+          "gnn": 0.903,
+          "efi": 0.892
+        },
+        "day 6-10": {
+          "gnn": 0.644,
+          "efi": 0.63
+        }
+      },
+      "extreme_heat": {
+        "all": {
+          "gnn": 0.815,
+          "efi": 0.757
+        },
+        "day 0-2": {
+          "gnn": 0.867,
+          "efi": 0.849
+        },
+        "day 3-5": {
+          "gnn": 0.84,
+          "efi": 0.759
+        },
+        "day 6-10": {
+          "gnn": 0.748,
+          "efi": 0.688
+        }
+      }
+    },
+    "tauktae": {
+      "clim_years_excluded": [],
+      "heavy_rain": {
+        "all": {
+          "gnn": 0.924,
+          "efi": 0.814
+        },
+        "day 0-2": {
+          "gnn": 0.976,
+          "efi": 0.966
+        },
+        "day 3-5": {
+          "gnn": 0.96,
+          "efi": 0.937
+        },
+        "day 6-10": {
+          "gnn": 0.882,
+          "efi": 0.713
+        }
+      },
+      "damaging_wind": {
+        "all": {
+          "gnn": 0.965,
+          "efi": 0.943
+        },
+        "day 0-2": {
+          "gnn": 0.989,
+          "efi": 0.983
+        },
+        "day 3-5": {
+          "gnn": 0.984,
+          "efi": 0.967
+        },
+        "day 6-10": {
+          "gnn": 0.898,
+          "efi": 0.802
+        }
+      },
+      "extreme_heat": {
+        "all": {
+          "gnn": 0.881,
+          "efi": 0.923
+        },
+        "day 0-2": {
+          "gnn": 0.9,
+          "efi": 0.933
+        },
+        "day 3-5": {
+          "gnn": 0.904,
+          "efi": 0.943
+        },
+        "day 6-10": {
+          "gnn": 0.84,
+          "efi": 0.906
+        }
+      }
+    },
+    "yaas": {
+      "clim_years_excluded": [],
+      "heavy_rain": {
+        "all": {
+          "gnn": 0.949,
+          "efi": 0.905
+        },
+        "day 0-2": {
+          "gnn": 0.95,
+          "efi": 0.94
+        },
+        "day 3-5": {
+          "gnn": 0.98,
+          "efi": 0.96
+        },
+        "day 6-10": {
+          "gnn": 0.931,
+          "efi": 0.901
+        }
+      },
+      "damaging_wind": {
+        "all": {
+          "gnn": 0.948,
+          "efi": 0.914
+        },
+        "day 0-2": {
+          "gnn": 0.942,
+          "efi": 0.914
+        },
+        "day 3-5": {
+          "gnn": 0.959,
+          "efi": 0.95
+        },
+        "day 6-10": {
+          "gnn": 0.917,
+          "efi": 0.879
+        }
+      },
+      "extreme_heat": {
+        "all": {
+          "gnn": 0.912,
+          "efi": 0.893
+        },
+        "day 0-2": {
+          "gnn": 0.927,
+          "efi": 0.911
+        },
+        "day 3-5": {
+          "gnn": 0.942,
+          "efi": 0.908
+        },
+        "day 6-10": {
+          "gnn": 0.805,
+          "efi": 0.801
+        }
+      }
+    },
+    "quiet2018": {
+      "clim_years_excluded": [
+        2018
+      ],
+      "heavy_rain": {
+        "all": {
+          "gnn": 0.873,
+          "efi": 0.89
+        },
+        "day 0-2": {
+          "gnn": 0.98,
+          "efi": 0.9
+        },
+        "day 3-5": {
+          "gnn": 0.95,
+          "efi": 0.958
+        },
+        "day 6-10": {
+          "gnn": 0.817,
+          "efi": 0.889
+        }
+      },
+      "damaging_wind": {
+        "all": {
+          "gnn": 0.941,
+          "efi": 0.91
+        },
+        "day 0-2": {
+          "gnn": 0.945,
+          "efi": 0.931
+        },
+        "day 3-5": {
+          "gnn": 0.963,
+          "efi": 0.97
+        },
+        "day 6-10": {
+          "gnn": 0.922,
+          "efi": 0.88
+        }
+      },
+      "extreme_heat": {
+        "all": {
+          "gnn": 0.892,
+          "efi": 0.875
+        },
+        "day 0-2": {
+          "gnn": 0.909,
+          "efi": 0.917
+        },
+        "day 3-5": {
+          "gnn": 0.685,
+          "efi": 0.697
+        },
+        "day 6-10": {
+          "gnn": 0.903,
+          "efi": 0.874
+        }
+      }
+    },
+    "amphan": {
+      "clim_years_excluded": [],
+      "heavy_rain": {
+        "all": {
+          "gnn": 0.955,
+          "efi": 0.896
+        },
+        "day 0-2": {
+          "gnn": 0.983,
+          "efi": 0.986
+        },
+        "day 3-5": {
+          "gnn": 0.97,
+          "efi": 0.974
+        },
+        "day 6-10": {
+          "gnn": 0.904,
+          "efi": 0.766
+        }
+      },
+      "damaging_wind": {
+        "all": {
+          "gnn": 0.952,
+          "efi": 0.939
+        },
+        "day 0-2": {
+          "gnn": 0.965,
+          "efi": 0.961
+        },
+        "day 3-5": {
+          "gnn": 0.947,
+          "efi": 0.937
+        },
+        "day 6-10": {
+          "gnn": 0.903,
+          "efi": 0.848
+        }
+      },
+      "extreme_heat": {
+        "all": {
+          "gnn": 0.841,
+          "efi": 0.854
+        },
+        "day 0-2": {
+          "gnn": 0.886,
+          "efi": 0.9
+        },
+        "day 3-5": {
+          "gnn": 0.85,
+          "efi": 0.856
+        },
+        "day 6-10": {
+          "gnn": 0.785,
+          "efi": 0.771
+        }
+      }
+    }
+  },
+  "summary": {
+    "heavy_rain": {
+      "all": {
+        "gnn_mean": 0.92,
+        "efi_mean": 0.882,
+        "gnn_wins": 4
+      },
+      "day 0-2": {
+        "gnn_mean": 0.972,
+        "efi_mean": 0.957,
+        "gnn_wins": 5
+      },
+      "day 3-5": {
+        "gnn_mean": 0.962,
+        "efi_mean": 0.955,
+        "gnn_wins": 4
+      },
+      "day 6-10": {
+        "gnn_mean": 0.852,
+        "efi_mean": 0.809,
+        "gnn_wins": 4
+      }
+    },
+    "damaging_wind": {
+      "all": {
+        "gnn_mean": 0.91,
+        "efi_mean": 0.863,
+        "gnn_wins": 7
+      },
+      "day 0-2": {
+        "gnn_mean": 0.956,
+        "efi_mean": 0.94,
+        "gnn_wins": 7
+      },
+      "day 3-5": {
+        "gnn_mean": 0.948,
+        "efi_mean": 0.917,
+        "gnn_wins": 6
+      },
+      "day 6-10": {
+        "gnn_mean": 0.837,
+        "efi_mean": 0.774,
+        "gnn_wins": 7
+      }
+    },
+    "extreme_heat": {
+      "all": {
+        "gnn_mean": 0.854,
+        "efi_mean": 0.841,
+        "gnn_wins": 5
+      },
+      "day 0-2": {
+        "gnn_mean": 0.898,
+        "efi_mean": 0.892,
+        "gnn_wins": 4
+      },
+      "day 3-5": {
+        "gnn_mean": 0.844,
+        "efi_mean": 0.829,
+        "gnn_wins": 4
+      },
+      "day 6-10": {
+        "gnn_mean": 0.791,
+        "efi_mean": 0.777,
+        "gnn_wins": 5
+      }
+    }
+  },
+  "n_events": 7
+}

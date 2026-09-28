@@ -1,0 +1,393 @@
+{
+ "fani": {
+  "kind": "cyclone",
+  "init": "2019-04-27",
+  "cyclone_tracks": [
+   {
+    "id": "T01",
+    "hazard": "damaging_wind",
+    "leads": [
+     0,
+     180
+    ],
+    "low_path": [
+     [
+      0,
+      4.5,
+      90.0
+     ],
+     [
+      90,
+      13.5,
+      85.5
+     ],
+     [
+      180,
+      21.0,
+      88.5
+     ]
+    ],
+    "steps_cut_from_larger_region": [
+     10,
+     30
+    ],
+    "largest_cut_cells": [
+     12,
+     8
+    ]
+   },
+   {
+    "id": "T02",
+    "hazard": "heavy_rain",
+    "leads": [
+     24,
+     198
+    ],
+    "low_path": [
+     [
+      24,
+      6.0,
+      88.5
+     ],
+     [
+      108,
+      13.5,
+      84.0
+     ],
+     [
+      198,
+      19.5,
+      90.0
+     ]
+    ],
+    "steps_cut_from_larger_region": [
+     3,
+     29
+    ],
+    "largest_cut_cells": [
+     13,
+     7
+    ]
+   }
+  ],
+  "lows_found": 33,
+  "lows_in_no_track": 0,
+  "lows_on_domain_edge": 0
+ },
+ "heatwave2019": {
+  "kind": "heatwave",
+  "init": "2019-05-28",
+  "cyclone_tracks": [],
+  "lows_found": 5,
+  "lows_in_no_track": 5,
+  "lows_on_domain_edge": 1
+ },
+ "vayu": {
+  "kind": "cyclone",
+  "init": "2019-06-09",
+  "cyclone_tracks": [
+   {
+    "id": "T01",
+    "hazard": "damaging_wind",
+    "leads": [
+     6,
+     126
+    ],
+    "low_path": [
+     [
+      6,
+      10.5,
+      72.0
+     ],
+     [
+      66,
+      16.5,
+      70.5
+     ],
+     [
+      126,
+      22.5,
+      66.0
+     ]
+    ],
+    "steps_cut_from_larger_region": [
+     10,
+     20
+    ],
+    "largest_cut_cells": [
+     28,
+     12
+    ]
+   },
+   {
+    "id": "T02",
+    "hazard": "heavy_rain",
+    "leads": [
+     24,
+     120
+    ],
+    "low_path": [
+     [
+      24,
+      12.0,
+      72.0
+     ],
+     [
+      66,
+      16.5,
+      70.5
+     ],
+     [
+      114,
+      22.5,
+      67.5
+     ]
+    ],
+    "steps_cut_from_larger_region": [
+     6,
+     15
+    ],
+    "largest_cut_cells": [
+     16,
+     10
+    ]
+   }
+  ],
+  "lows_found": 33,
+  "lows_in_no_track": 13,
+  "lows_on_domain_edge": 5
+ },
+ "tauktae": {
+  "kind": "cyclone",
+  "init": "2021-05-12",
+  "cyclone_tracks": [
+   {
+    "id": "T01",
+    "hazard": "heavy_rain",
+    "leads": [
+     66,
+     180
+    ],
+    "low_path": [
+     [
+      66,
+      12.0,
+      73.5
+     ],
+     [
+      126,
+      18.0,
+      69.0
+     ],
+     [
+      180,
+      21.0,
+      67.5
+     ]
+    ],
+    "steps_cut_from_larger_region": [
+     20,
+     20
+    ],
+    "largest_cut_cells": [
+     66,
+     10
+    ]
+   },
+   {
+    "id": "T02",
+    "hazard": "damaging_wind",
+    "leads": [
+     66,
+     162
+    ],
+    "low_path": [
+     [
+      66,
+      12.0,
+      73.5
+     ],
+     [
+      114,
+      18.0,
+      70.5
+     ],
+     [
+      162,
+      24.0,
+      70.5
+     ]
+    ],
+    "steps_cut_from_larger_region": [
+     17,
+     17
+    ],
+    "largest_cut_cells": [
+     74,
+     27
+    ]
+   }
+  ],
+  "lows_found": 39,
+  "lows_in_no_track": 19,
+  "lows_on_domain_edge": 0
+ },
+ "yaas": {
+  "kind": "cyclone",
+  "init": "2021-05-21",
+  "cyclone_tracks": [
+   {
+    "id": "T01",
+    "hazard": "damaging_wind",
+    "leads": [
+     48,
+     174
+    ],
+    "low_path": [
+     [
+      48,
+      16.5,
+      90.0
+     ],
+     [
+      102,
+      18.0,
+      88.5
+     ],
+     [
+      156,
+      24.0,
+      87.0
+     ]
+    ],
+    "steps_cut_from_larger_region": [
+     17,
+     19
+    ],
+    "largest_cut_cells": [
+     131,
+     33
+    ]
+   },
+   {
+    "id": "T02",
+    "hazard": "heavy_rain",
+    "leads": [
+     42,
+     156
+    ],
+    "low_path": [
+     [
+      42,
+      16.5,
+      90.0
+     ],
+     [
+      102,
+      18.0,
+      88.5
+     ],
+     [
+      156,
+      24.0,
+      87.0
+     ]
+    ],
+    "steps_cut_from_larger_region": [
+     8,
+     20
+    ],
+    "largest_cut_cells": [
+     11,
+     8
+    ]
+   }
+  ],
+  "lows_found": 31,
+  "lows_in_no_track": 11,
+  "lows_on_domain_edge": 5
+ },
+ "quiet2018": {
+  "kind": "none",
+  "init": "2018-05-02",
+  "cyclone_tracks": [],
+  "lows_found": 3,
+  "lows_in_no_track": 3,
+  "lows_on_domain_edge": 0
+ },
+ "amphan": {
+  "kind": "cyclone",
+  "init": "2020-05-15",
+  "cyclone_tracks": [
+   {
+    "id": "T01",
+    "hazard": "damaging_wind",
+    "leads": [
+     24,
+     156
+    ],
+    "low_path": [
+     [
+      24,
+      10.5,
+      87.0
+     ],
+     [
+      90,
+      16.5,
+      85.5
+     ],
+     [
+      150,
+      24.0,
+      88.5
+     ]
+    ],
+    "steps_cut_from_larger_region": [
+     19,
+     22
+    ],
+    "largest_cut_cells": [
+     142,
+     27
+    ]
+   },
+   {
+    "id": "T02",
+    "hazard": "heavy_rain",
+    "leads": [
+     24,
+     150
+    ],
+    "low_path": [
+     [
+      24,
+      10.5,
+      87.0
+     ],
+     [
+      90,
+      16.5,
+      85.5
+     ],
+     [
+      150,
+      24.0,
+      88.5
+     ]
+    ],
+    "steps_cut_from_larger_region": [
+     7,
+     22
+    ],
+    "largest_cut_cells": [
+     50,
+     21
+    ]
+   }
+  ],
+  "lows_found": 28,
+  "lows_in_no_track": 6,
+  "lows_on_domain_edge": 0
+ }
+}

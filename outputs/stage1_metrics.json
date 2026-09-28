@@ -1,0 +1,20 @@
+{
+  "amphan/heavy_rain": {
+    "auc_gnn": 0.955,
+    "auc_raw_efi": 0.896,
+    "brier_gnn": 0.0216,
+    "base_rate": 0.023
+  },
+  "amphan/damaging_wind": {
+    "auc_gnn": 0.952,
+    "auc_raw_efi": 0.939,
+    "brier_gnn": 0.0437,
+    "base_rate": 0.0519
+  },
+  "amphan/extreme_heat": {
+    "auc_gnn": 0.841,
+    "auc_raw_efi": 0.854,
+    "brier_gnn": 0.0233,
+    "base_rate": 0.0208
+  }
+}
