@@ -9,3 +9,5 @@ data/cache/*/fine_train.nc
 data/cache/synthetic/
 # smoke-test weights from --fast
 models/*_fast/
+# Vercel CLI project link
+.vercel/

@@ -1,0 +1,16 @@
+# Vercel deployment only. Vercel reads this file instead of requirements.txt and serves
+# the alert API + dashboard from the prebuilt outputs/ folder, so it needs no torch.
+# The full pipeline (python run_demo.py) still installs from requirements.txt.
+# Keep these pins in step with requirements.txt.
+[project]
+name = "sih-alert-api"
+version = "0.1.0"
+requires-python = "~=3.12.0"
+dependencies = [
+    "fastapi==0.141.1",
+    "numpy==1.26.4",
+    "matplotlib==3.10.9",
+]
+
+[tool.vercel]
+entrypoint = "sih.api.app:app"

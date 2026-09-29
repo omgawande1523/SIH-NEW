@@ -10,6 +10,7 @@ Endpoints
   GET /alerts/point?lat=&lon=         alert level for any location (5 km radius by default)
   GET /alerts/zones?lead_hours=       GeoJSON polygons of low / moderate / severe zones
   GET /dashboard                      the map dashboard (static HTML)
+  GET /                               redirects to /dashboard
 """
 from __future__ import annotations
 
@@ -19,7 +20,7 @@ from functools import lru_cache
 
 import numpy as np
 from fastapi import FastAPI, HTTPException, Query
-from fastapi.responses import FileResponse, HTMLResponse
+from fastapi.responses import FileResponse, HTMLResponse, RedirectResponse
 
 from sih import config as C
 
@@ -208,3 +209,8 @@ def dashboard():
     if not p.exists():
         raise HTTPException(503, "dashboard not built yet")
     return FileResponse(p)
+
+
+@app.get("/", include_in_schema=False)
+def root():
+    return RedirectResponse("/dashboard")

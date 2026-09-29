@@ -106,6 +106,32 @@ curl "localhost:8000/alerts/point?lat=22.57&lon=88.36&lead_hours=126"   # Kolkat
 curl "localhost:8000/alerts/zones?p_min=0.5"                 # GeoJSON low/moderate/severe polygons
 ```
 
+### Deploy on Vercel
+
+The alert API and the dashboard deploy to Vercel as one Python function. Vercel does not
+run the models. It serves the results already committed in `outputs/`
+(`products.json`, `alert_grid.npz`, `dashboard.html`), so the function needs only
+FastAPI, NumPy and matplotlib, with no torch.
+
+1. On [vercel.com](https://vercel.com/new), choose *Add New → Project* and import
+   `omgawande1523/SIH-NEW`.
+2. Leave the settings as detected (Framework Preset: **FastAPI**; no build command, no
+   environment variables) and click *Deploy*.
+3. Open the deployment URL: `/` redirects to the dashboard, `/docs` has the interactive
+   API docs, and every endpoint above works, e.g. `https://<your-app>.vercel.app/alerts/core`.
+
+Two files control the deploy:
+
+* `pyproject.toml` lists the function's dependencies and points Vercel at
+  `sih.api.app:app`. Vercel reads it instead of `requirements.txt`, which pins
+  torch and would make the bundle too large. Keep its version pins in step with
+  `requirements.txt`.
+* `vercel.json` leaves `data/`, `models/`, `docs/`, `tests/` and `scripts/` out of the
+  function bundle, since the API never reads them.
+
+To publish a new forecast, run `python run_demo.py` locally, then commit and push the
+updated `outputs/`. Every push to `main` redeploys.
+
 ---
 
 ## Architecture
@@ -382,4 +408,5 @@ sih/dashboard/build.py    Leaflet dashboard + figures
 scripts/                  cross-validation, physics ablation, tracker check, API smoke test, architecture diagram
 tests/                    unit tests (python -m pytest -q tests)
 data/cache/<source>/      cached inputs    models/<source>/  trained weights    outputs/  products
+pyproject.toml, vercel.json   Vercel deployment of the API + dashboard (see "Deploy on Vercel")
 ```

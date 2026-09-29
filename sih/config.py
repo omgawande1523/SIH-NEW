@@ -7,10 +7,19 @@ import os
 from dataclasses import dataclass
 from pathlib import Path
 
+def _mkdir(p: Path):
+    # On a read-only deployment (Vercel) the API only reads outputs/, and data/ and
+    # models/ are left out of the bundle, so a folder that can't be created is fine.
+    try:
+        p.mkdir(parents=True, exist_ok=True)
+    except OSError:
+        pass
+
+
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
 OUT = ROOT / "outputs"
-OUT.mkdir(parents=True, exist_ok=True)
+_mkdir(OUT)
 
 # Data source: "era5" (real ECMWF ensemble + ERA5, downloaded once) or "synthetic" (offline).
 # Each source keeps its own cache and trained weights.
@@ -20,8 +29,8 @@ SOURCE = CACHE = MODELS = None
 def use_source(src: str):
     global SOURCE, CACHE, MODELS
     SOURCE, CACHE, MODELS = src, DATA / "cache" / src, ROOT / "models" / src
-    CACHE.mkdir(parents=True, exist_ok=True)
-    MODELS.mkdir(parents=True, exist_ok=True)
+    _mkdir(CACHE)
+    _mkdir(MODELS)
 
 
 use_source(os.environ.get("SIH_SOURCE", "era5"))
